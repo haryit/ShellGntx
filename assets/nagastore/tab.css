@@ -1,0 +1,22 @@
+   @media (min-width: 1024px){ 
+  .lg\:hidden { 
+    display: none;
+  } 
+} 
+
+/* Pastikan container tab bisa di-scroll */
+    .kosweb-scroll {
+        display: flex;
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-behavior: smooth; /* Memastikan scroll berjalan dengan mulus */
+    }
+
+    .kosweb-scroll::-webkit-scrollbar {
+        display: none; /* Menyembunyikan scrollbar di Webkit browser */
+    }
+
+    .kosweb-scroll {
+        -ms-overflow-style: none; /* Menyembunyikan scrollbar di IE dan Edge */
+        scrollbar-width: none; /* Menyembunyikan scrollbar di Firefox */
+    }

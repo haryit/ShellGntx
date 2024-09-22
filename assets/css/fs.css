@@ -1,0 +1,15 @@
+    .\[--duration\:20s\] { 
+    --duration: 20s;
+} 
+
+.data-\[run-marquee\=true\]\:animate-marquee[data-run-marquee="true"] { 
+    animation: marquee var(--duration) linear infinite;
+} 
+
+.data-\[run-marquee\]\:flex-row[data-run-marquee] { 
+    flex-direction: row;
+} 
+
+.group:hover .group-hover\:\[animation-play-state\:paused\] { 
+    animation-play-state: paused;
+} 

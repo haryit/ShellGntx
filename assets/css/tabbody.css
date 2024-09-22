@@ -1,0 +1,17 @@
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-button {
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: #337ab7;
+  color: #fff;
+  border-bottom: 2px solid #337ab7;
+}

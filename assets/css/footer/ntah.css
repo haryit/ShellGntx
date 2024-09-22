@@ -1,0 +1,17 @@
+ #radix-:RamH1: {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+#radix-:RamH1:[data-state="open"] {
+  opacity: 1;
+  visibility: visible;
+}
+[data-radix-collection-item] {
+  /* Add this rule to change the background color on hover and focus */
+  &:hover,
+  &:focus {
+    background-color: #5EA085; /* Change this to your desired green color */
+  }
+}
