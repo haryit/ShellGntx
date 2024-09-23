@@ -5,7 +5,7 @@
     $('#lupakahmaniez').on('click', function() {
       $('#memelupa').hide();
       setTimeout(function() {
-        window.location.href = 'id/forgot';
+        window.location.href = '/id/forgot';
       }, 3000);
     });
   });
