@@ -1,0 +1,31 @@
+  .tobrut {
+    opacity: 0;
+    transform: translateY(20px); /* Start with the element 20px below its normal position */
+    animation: fadeInUp 0.4s forwards; /* Adjusted duration for quicker animation */
+    animation-delay: calc(var(--i) * 0.1s); /* Faster delay increment */
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px); /* Start from 20px below */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* End at normal position */
+       transform: scale(1);
+    }
+  }
+
+  .scale-on-hover {
+    transform: scale(1);
+     transition: transform 0.3s ease-in-out; /* Menambahkan transisi untuk efek skala */
+  }
+
+  .scale-on-hover:hover {
+    transform: scale(1.05) !important;
+  }
+
+  .scale-on-hover:active {
+    transform: scale(0.95) !important;
+  }
