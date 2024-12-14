@@ -8,7 +8,7 @@ const lang = document.currentScript.dataset.lang;
   searchInput.addEventListener('input', async (e) => {
     const searchTerm = e.target.value.trim();
     if (searchTerm.length > 0) {
-      const response = await fetch(`${urlweb}/search?term=${searchTerm}`);
+      const response = await fetch(`${urlweb}/search/${searchTerm}`);
       const data = await response.json();
       if (data.length === 0) {
         // Data not found, display error message
